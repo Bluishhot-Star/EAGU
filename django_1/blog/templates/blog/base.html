@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/blog.css">
+    <script src="https://kit.fontawesome.com/413c7f2129.js" crossorigin="anonymous"></script>
+    <title>Kassidlog</title>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="head-container">
+                <div class="head-title"> <a href="{% url 'main' %}"><h1>Kassidlog</h1></a></div>
+                <div class="head-desc"><a href="{% url 'main' %}">푸르지만 뜨겁게</a></div>
+            </div>
+        </div>
+    </header>
+        <section style="margin-top: 40px" class="postlist">
+            <div class="inner">
+                <div class="postlist-container">
+                    <div class="postdetail-head">
+                        <a href="{% url 'post_list' %}"><i class="fas fa-align-justify"></i></a>
+                    </div>
+                    <div class="post-list">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+
+    </footer>
+    <script src="js/script.js">
+        
+    </script>
+</body>
+</html>
