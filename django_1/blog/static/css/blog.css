@@ -18,6 +18,7 @@ h1,h2{
 }
 a {
     all: unset;
+    transition: 0.3s;
 }
 a:link {
     text-decoration : none;
@@ -74,6 +75,7 @@ header {
 }
 .head-container a{
     color: white;
+    transition: 0.3s;
 }
 .head-container .head-title{
     font-family: 'Smooch', cursive;
@@ -210,7 +212,7 @@ header {
 
 
 
-/* New Post */
+/* Post */
 .postlist {
     height: 250px;
     margin: 0 auto;
@@ -219,7 +221,6 @@ header {
     padding: 0px 50px;
     width: 100%;
     height: 100%;
-    /* background-color: rgb(86, 151, 151); */
     opacity: 0.8;
     z-index: 2;
 }
@@ -227,6 +228,9 @@ header {
     font-size: 1.5rem;
     text-decoration: solid;
     border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 .post{
     padding: 10px;
@@ -241,9 +245,14 @@ header {
     text-decoration :underline;
     width: 100%;
 }
+.post a:hover{
+    border-radius: 5px;
+    background-color: lightgray;
+}
 .post .post-title{
     font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 .post .post-contents{
 
@@ -265,6 +274,52 @@ header {
     color: #000;
     font-size: 1.2rem;
 }
-.list-style{
-    color: royalblue;
+.postlist-container a{
+    margin: 0px 2px ;
+}
+.date{ 
+    text-align: right;
+}
+
+/* Edit Page */
+
+.post-form textarea{
+    font-family: 'NanumSquare';
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+}
+.post-form input{
+    font-family: 'NanumSquare';
+    height: 30px;
+    width: 100%;
+    font-size: 15px;
+}
+.post-form input:focus{
+    outline: 2px solid blueviolet;
+}
+.post-form textarea:focus{
+    outline: 2px solid blueviolet;
+}
+.save-container{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.save-container a{
+    border-radius: 2px;
+    padding: 2px;
+    transition: 0.3s;
+}
+.save-container a:hover{
+    background-color: lightgray;
+}
+.fa-save{
+    font-size: 20px;
+}
+.newpost{
+    transition:0.3s;
+}
+.newpost:hover{
+    transform: rotate(180deg);
 }

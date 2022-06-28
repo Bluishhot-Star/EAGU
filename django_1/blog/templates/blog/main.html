@@ -83,7 +83,13 @@
         <section class="postlist">
             <div class="inner">
                 <div class="postlist-container">
-                    <div class="post-head"><a href="{% url 'post_list' %}">New Article</a></div>                    
+                    <div class="post-head">
+                        <a href="{% url 'post_list' %}">New Article</a>
+                        <div>
+                            <a href="{% url 'post_new' %}" ><i class="fas fa-plus newpost"></i></a>
+                            <a href="{% url 'post_list' %}"><i class="fas fa-bars"></i></a>   
+                        </div>
+                    </div>                    
                     <div class="post-list">
                         {% for post in posts %}
                             <div class="post">

@@ -22,7 +22,8 @@
             <div class="inner">
                 <div class="postlist-container">
                     <div class="postdetail-head">
-                        <a href="{% url 'post_list' %}"><i class="fas fa-align-justify"></i></a>
+                        <a class="newpost" href="{% url 'post_new' %}" ><i class="fas fa-plus "></i></a>
+                        <a class="post-list" href="{% url 'post_list' %}"><i class="fas fa-bars"></i></a>
                     </div>
                     <div class="post-list">
                         {% block content %}
@@ -31,7 +32,6 @@
                 </div>
             </div>
         </section>
-
     </div>
     <footer>
 
