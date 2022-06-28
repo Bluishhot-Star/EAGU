@@ -2,12 +2,9 @@
 
 {% block content %}
     <h1>New post</h1>
-    <div class="new-article">
-        <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-        </form>
-        <p class="save-container">
-            <a type="submit" class="save btn btn-default">Save <i class="fas fa-save"></i></a>
-        </p>
-    </div>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
 {% endblock %}
+

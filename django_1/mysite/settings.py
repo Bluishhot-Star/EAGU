@@ -25,7 +25,7 @@ SECRET_KEY = 'sol0w41v$zv1_qv822(+=a6x4zv3005ydw0#6@dw57+&c22m!k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythoneverywhere.com'] # 3. 배포를 위해 호스트 이름과 일치시키기
+ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com'] # 3. 배포를 위해 호스트 이름과 일치시키기
 
 
 # Application definition
