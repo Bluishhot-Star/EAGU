@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
 
 def main(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
@@ -43,4 +44,8 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
     
+def post_delete(request, pk):
+    post = get_object_or_404(Post,pk=pk)
+    post.delete()
+    return redirect('post_list')
 # request를 받아 render 메서드 호출 & render의 리턴값('blog/post_list.html' 템플릿)을 반환

@@ -6,7 +6,10 @@
             <div class="post-head">
                 <div class="post-title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></div>
                 {% if user.is_authenticated %}
+                <div class="btn-container">
                     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><i class="fas fa-edit"></i></a>
+                    <a href="{% url 'post_delete' pk=post.pk %}"><i class="fas fa-trash-alt post-delete"></i></a>
+                </div>
                 {% endif %}
             </div>
             <div class="post-contents">{{ post.text|linebreaksbr }}</div>
