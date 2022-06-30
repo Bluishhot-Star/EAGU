@@ -85,6 +85,8 @@ header {
 .head-container .head-desc{
     font-weight: bold;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
 }
 .main {
     height: 250px;
@@ -348,4 +350,38 @@ i{
 }
 a{
     cursor: pointer;
+}
+.login-link{ 
+    margin: 0 5px;
+}
+.username { 
+    color: white;
+    margin: 0px 5px;
+    font-size: 13px;
+}
+.login-container input{
+    font-family: 'NanumSquare';
+}
+.login-container input:focus{
+    outline: 2px solid blueviolet;
+}
+.login-btn{ 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    border: none;    
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+.login-btn-container{ 
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    width:fit-content;
+    padding: 2px;
+    padding-right: 5px;
+    border-radius: 2px;
 }
