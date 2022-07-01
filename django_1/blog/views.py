@@ -52,4 +52,6 @@ def post_delete(request, pk):
     post = get_object_or_404(Post,pk=pk)
     post.delete()
     return redirect('post_list')
+
+
 # request를 받아 render 메서드 호출 & render의 리턴값('blog/post_list.html' 템플릿)을 반환

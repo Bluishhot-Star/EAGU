@@ -17,11 +17,18 @@
             <td>{{ form.password }}</td>
         </tr>
         </table>
-
-        <label class="login-btn-container">
-            <input class="login-btn" type="submit" value="Login" />
-            <i class="fas fa-sign-in-alt"></i>
-        </label>
+        <div class="btn-contaioner">
+            <label class="login-btn-container">
+                <input class="login-btn" type="submit" value="Login" />
+                <i class="fas fa-sign-in-alt"></i>
+            </label>
+            <label class="signup-btn">
+                <a href="{% url 'signup' %}">
+                    Sign Up
+                    <i class="fas fa-user-plus"></i>
+                </a>
+            </label>
+        </div>
         <input type="hidden" name="next" value="{{ next }}" />
     </form>
 {% endblock %}

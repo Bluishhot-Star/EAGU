@@ -441,4 +441,14 @@ ul,li {
     padding: 2px;
     padding-right: 5px;
     border-radius: 2px;
+    font-size: 13px;
+}
+.btn-contaioner {
+    display: flex;
+}
+.btn-contaioner label{ 
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin: 0px 5px;
 }
