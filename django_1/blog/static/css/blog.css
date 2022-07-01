@@ -385,3 +385,60 @@ a{
     padding-right: 5px;
     border-radius: 2px;
 }
+.signup-container {
+    width: fit-content;
+    border: 1px solid #000;
+}
+.signup-container ul{
+    list-style:none; 
+}
+.signup-head {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.signup-desc {
+    text-align: left;
+    padding: 20px;
+}
+.signup-desc input {
+    display: block;
+    font-size: 17px;
+}
+.signup-desc input:focus {
+    outline: 2px solid blueviolet;
+}
+.signup-desc br{
+    display: none;
+}
+ul,li {
+    padding: 0;
+}
+.signup-desc *:nth-child(n) {
+    margin: 5px 0px;
+}
+.helptext {
+    font-size: 10px;
+    width: 100%;
+    display: block;
+}
+.signup-btn input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    border: none;    
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+.signup-btn {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    width:fit-content;
+    padding: 2px;
+    padding-right: 5px;
+    border-radius: 2px;
+}

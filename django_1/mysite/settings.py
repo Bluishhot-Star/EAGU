@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -120,5 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static'); # 2. 정적파일 경로 추가
-
+STATICFILES_DIR=[
+    BASE_DIR, 'blog/static',
+]
 LOGIN_REDIRECT_URL = '/'
